@@ -943,27 +943,12 @@
         Ajax('/labor/uploadpic','post',formData,function (ret) {
             Alert('上传图片成功！！');
             for(var i=0;i<ret.data.length;i++){
-                dropdown.append('<li><a attrId='+ret.data[i].id+'>'+ret.data[i].name+'</a></li>');
+                dropdown.append('<li><a attrId='+ret.data[i].id+' Purl='+ret.data[i].Purl+'>'+ret.data[i].name+'</a></li>');
             }
             initgroup();
         },function(){},true)
     }
-    function openImg(_this) {
-        var oParents=$(_this).parents('.input-group');
-        var GtypeImgId=oParents.find('#GtypeImgId');
 
-        var $this=null;
-        if(GtypeImgId.val().length>0){
-             $this=$('[attrid="'+GtypeImgId.val()+'"]');
-        }else {
-             $this=oParents.find('a').eq(0)
-        }
-        if($this&&$this.length>0){
-            showGroup($this)
-        }else{
-            Alert('请选择分组，或者上传图片！！')
-        }
-    }
     function delImg(_this){
         Confirm("确定删除图片？",function(){
             var oParents=$(_this).parents('.input-group');

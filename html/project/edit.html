@@ -34,6 +34,9 @@
             left: -3px;
         }
     </style>
+    <link href="../../js/photoviewer-master/photoviewer.css" rel="stylesheet">
+    <script src="../../js/photoviewer-master/photoviewer.js"></script>
+
     <link href="../../js/plugins/layer/skin/layer.css" rel="stylesheet">
     <script src="../../js/plugins/layer/layer.min.js"></script>
     <script src="../../js/common.js"></script>
@@ -551,13 +554,7 @@
             initgroup();
         },function(){},true)
     }
-    function openImg(_this) {
-        var oParents=$(_this).parents('.input-group');
-        var GtypeImgId=oParents.find('#GtypeImgId');
-        Ajax('/company/pic/getone','get',{ID:GtypeImgId.val()},function (ret) {
-            Open('','',localHost+ret.url)
-        })
-    }
+
     function delImg(_this){
         Confirm("确定删除图片？",function(){
             var oParents=$(_this).parents('.input-group');

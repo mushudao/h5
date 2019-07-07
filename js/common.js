@@ -496,10 +496,13 @@ function changeAddTabs(url,name) {
     windowTop.removeTab();
 }
 
-//产看图片
+//查看图片
 function showImg(src,tit,arr,index) {
     var items;
     if(arr&&arr.length>0){
+        if(typeof arr=='string'){
+            arr=JSON.parse(arr)
+        }
          items =arr
     }else{
          items = [
@@ -515,7 +518,7 @@ function showImg(src,tit,arr,index) {
     var viewer = new PhotoViewer(items, options);
 }
 
-//参考分组图片
+//查看view页面的分组图片
 function showGroup($this) {
     var groups=$this.parents('ul');
     var index=$this.parent('li').index();
@@ -525,8 +528,25 @@ function showGroup($this) {
         var src=aLink.eq(i).attr('purl');
         groupArr.push({
             src:localHost+src,
-            attr:aLink.eq(i).html()||src.split('/')[0]
+            attr:aLink.eq(i).text()||src.split('/')[0]
         })
     }
     showImg('','',groupArr,index)
+}
+
+//查看编辑新建页面的分组图片
+function openImg(_this) {
+    var oParents=$(_this).parents('.input-group');
+    var GtypeImgId=oParents.find('#GtypeImgId');
+    var $this=null;
+    if(GtypeImgId.val().length>0){
+        $this=$('[attrid="'+GtypeImgId.val()+'"]');
+    }else {
+        $this=oParents.find('a').eq(0)
+    }
+    if($this&&$this.length>0){
+        showGroup($this)
+    }else{
+        Alert('请选择分组，或者上传图片！！')
+    }
 }

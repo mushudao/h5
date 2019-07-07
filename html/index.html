@@ -221,6 +221,9 @@
 
                             </ul>
                         </li>
+                        <li class="dropdown" id="userName">
+
+                        </li>
                         <li class="dropdown">
                             <a class="dropdown-toggle count-info"  id="loginOut" data-toggle="dropdown" href="javascript:void(0)" title="登出">
                                 <i class="fa fa-sign-out"></i>
@@ -346,12 +349,13 @@
                 $('#memberBad').html(number_list[2]);
                 var total=number_list[0]+number_list[1]+number_list[2];
                 $('#allBad').html(total);
+                $('#allBadPar').empty();
                 var parBox=$('#allBadPar');
                 for(var p=0;p<project.length;p++){
                     var pstr='<li class="m-t-xs">'+
                         '<div class="dropdown-messages-box">'+
                         '<div class="media-body">'+
-                        '<a class="J_menuItem" href="project/view.html?='+project[p].id+'&Name='+project[p].name+'">'
+                        '<a class="J_menuItem" href="javascript:viod(0)" onclick=addTabs("../html/project/view.html?='+project[p].id+'&Name='+project[p].name+'","项目详情")>'
                             +project[p].name+'</a>'+
                         '<br></div></div></li>';
                     parBox.append(pstr)
@@ -361,7 +365,7 @@
                     var str='<li class="m-t-xs">'+
                             '<div class="dropdown-messages-box">'+
                             '<div class="media-body">'+
-                            '<a class="J_menuItem" href="company/view.html?CompanyId='+company[i].id+'&Name='+company[i].name+'">'
+                            '<a class="J_menuItem" href="javascript:viod(0)" onclick=addTabs("../html/company/view.html?CompanyId='+company[i].id+'&Name='+company[i].name+'","公司详情")>'
                                 +company[i].name+'</a>'+
                             '<br></div></div></li>';
                         parBox.append(str)
@@ -372,15 +376,18 @@
                     var lstr='<li class="m-t-xs">'+
                         '<div class="dropdown-messages-box">'+
                         '<div class="media-body">'+
-                        '<a class="J_menuItem" href="member/view.html?id='+labor[l].id+'&Name='+labor[l].name+'">'+labor[l].name+'</a>'+
+                        '<a class="J_menuItem" onclick=addTabs("../html/member/view.html?id='+labor[l].id+'&Name='+labor[l].name+'","劳工详情") href="javascript:viod(0)">'+labor[l].name+'</a>'+
                         '<br></div></div></li>';
                     parBox.append(lstr)
                 }
-                parBox .append('<li class="divider"></li>');
+                parBox.append('<li class="divider"></li>');
             })
         }
 
         setInterval("setinfo()",600000);
+
+        var userName=getCookie("LoginName");
+        $('#userName').html(userName)
     </script>
 
 </body>

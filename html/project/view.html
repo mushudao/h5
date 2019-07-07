@@ -73,7 +73,8 @@
     </style>
     <script src="../../js/jquery.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
-
+    <link href="../../js/photoviewer-master/photoviewer.css" rel="stylesheet">
+    <script src="../../js/photoviewer-master/photoviewer.js"></script>
     <link href="../../js/plugins/layer/skin/layer.css" rel="stylesheet">
     <script src="../../js/plugins/layer/layer.min.js"></script>
     <script src="../../js/common.js"></script>
@@ -521,8 +522,10 @@
                     $('#'+parid+'_child').html(SetShowGroup(ret.pic_list));
                 });
             }else{
-                var Purl=$(this).attr('Purl');
-                Open('','',localHost+Purl)
+             /*   var Purl=$(this).attr('Purl');
+                Open('','',localHost+Purl)*/
+             var $this=$(this);
+             showGroup($this)
             }
         });
     }
@@ -739,7 +742,7 @@
         function returnUrl(data) {
             var str='';
             for(var j=0;j<data.length;j++){
-                str+='<img style="margin: 20px  20px 0 0"  src="'+localHost+data[j].Purl+'">'
+                str+='<img  onclick=showImg("'+localHost+data[j].Purl+'","'+data[j].Name+'")  style="margin: 20px  20px 0 0"  src="'+localHost+data[j].Purl+'">'
             }
             return str;
         }

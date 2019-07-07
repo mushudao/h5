@@ -225,18 +225,8 @@
                     $('#'+parid+'_child').html(SetShowGroup(ret.pic_list));
                 });
             }else{
-                var groups=$(this).parents('ul');
-                var index=$(this).parent('li').index();
-                var aLink=groups.find('a');
-                var groupArr=[];
-                for(var i=0; i<aLink.length;i++){
-                    var src=aLink.eq(i).attr('purl');
-                    groupArr.push({
-                        src:src,
-                        attr:src.split('/')[0]
-                    })
-                }
-                showImg('','',groupArr,index)
+                var $this=$(this);
+                showGroup($this)
             }
         });
     }
@@ -251,7 +241,6 @@
             $('#License').attr({
                 'src':localHost+company.License,
             });
-           // $('#License').attr('src',localHost+company.License);
             $('#areaId').html(company.ProvinceID+company.CityID+company.DistrictID);
             $('#Address').html(company.Address);
             $('#Phone').html(showContact(company.Phone));
