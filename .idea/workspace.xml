@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e602c9f-e43c-4812-adae-e680abc969fa" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/company/team.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/viewer/viewer.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/viewer/viewer.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/backletter/edit.html" afterPath="$PROJECT_DIR$/html/backletter/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/company/edit.html" afterPath="$PROJECT_DIR$/html/company/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/company/list.html" afterPath="$PROJECT_DIR$/html/company/list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/company/new.html" afterPath="$PROJECT_DIR$/html/company/new.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/company/view.html" afterPath="$PROJECT_DIR$/html/company/view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/file/edit.html" afterPath="$PROJECT_DIR$/html/file/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/home.html" afterPath="$PROJECT_DIR$/html/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/index.html" afterPath="$PROJECT_DIR$/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/login.html" afterPath="$PROJECT_DIR$/html/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/member/edit.html" afterPath="$PROJECT_DIR$/html/member/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/member/new.html" afterPath="$PROJECT_DIR$/html/member/new.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/member/view.html" afterPath="$PROJECT_DIR$/html/member/view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/project/edit.html" afterPath="$PROJECT_DIR$/html/project/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/project/new.html" afterPath="$PROJECT_DIR$/html/project/new.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/project/progressNew.html" afterPath="$PROJECT_DIR$/html/project/progressNew.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/project/view.html" afterPath="$PROJECT_DIR$/html/project/view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/root/user.html" afterPath="$PROJECT_DIR$/html/root/user.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/common.js" afterPath="$PROJECT_DIR$/js/common.js" />
-    </list>
+    <list default="true" id="1e602c9f-e43c-4812-adae-e680abc969fa" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -41,8 +18,8 @@
       <file leaf-file-name="new.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/company/new.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="247" column="0" lean-forward="true" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
+            <state relative-caret-position="603">
+              <caret line="264" column="0" lean-forward="true" selection-start-line="264" selection-start-column="0" selection-end-line="264" selection-end-column="0" />
               <folding>
                 <marker date="1562494342042" expanded="true" signature="15829:15878" ph="..." />
                 <marker date="1562494342042" expanded="true" signature="15913:15919" ph=" " />
@@ -470,15 +447,15 @@
       <workItem from="1562418443485" duration="3740000" />
       <workItem from="1562471331971" duration="15635000" />
       <workItem from="1562488701080" duration="5661000" />
-      <workItem from="1562494607264" duration="507000" />
+      <workItem from="1562494607264" duration="749000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="435611000" />
+    <option name="totallyTimeSpent" value="435853000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17281349" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -837,8 +814,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/company/new.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="247" column="0" lean-forward="true" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
+        <state relative-caret-position="603">
+          <caret line="264" column="0" lean-forward="true" selection-start-line="264" selection-start-column="0" selection-end-line="264" selection-end-column="0" />
           <folding>
             <marker date="1562494342042" expanded="true" signature="15829:15878" ph="..." />
             <marker date="1562494342042" expanded="true" signature="15913:15919" ph=" " />
